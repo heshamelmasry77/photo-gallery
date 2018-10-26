@@ -1,6 +1,6 @@
 {
-  "name": "flickr-gallery",
-  "short_name": "flickr-gallery",
+  "name": "Photo Gallery",
+  "short_name": "Photo Gallery",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",

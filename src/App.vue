@@ -1,28 +1,42 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-toolbar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span>swingdev </span>
+        <span class="font-weight-light">PHOTO GALLERY</span>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn
+        flat
+        href="https://www.swingdev.io/"
+        target="_blank"
+        icon
+      >
+        <v-img
+          :src="require('./assets/swingdev.png')"
+          contain
+        ></v-img>
+      </v-btn>
+    </v-toolbar>
+
+    <v-content>
+      <photo-gallery />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PhotoGallery from './components/PhotoGallery'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
+    PhotoGallery
+  },
+  data() {
+    return {
+      //
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
